@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Manas Jain — Portfolio</title>
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <header class="hero">
+    <nav class="nav">
+      <div class="logo">Manas Jain</div>
+      <ul>
+        <li><a href="#work">Work</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="intro">
+      <h1>Manas Jain</h1>
+      <p>Frontend • Backend • DevOps</p>
+      <a class="cta" href="#work">See my work</a>
+    </div>
+  </header>
+
+  <main class="container">
+  <section id="work" class="cards">
+
+
+    <!-- New Projects -->
+    <article class="card">
+      <h3>FitMate.AI</h3>
+      <p>
+        An AI-powered fitness web app built using the MERN stack and Gemini API.
+        It generates personalized workout and nutrition plans, tracks progress,
+        and integrates Firebase Authentication for secure login.
+      </p>
+      <p><strong>Tech:</strong> MongoDB, Express, React, Node.js, Firebase, Gemini API</p>
+      <a href="https://fitmateai.vercel.app/" target="_blank">View Project</a>
+    </article>
+
+    <article class="card">
+      <h3>Contextify</h3>
+      <p>
+        A RAG Application that leverages LLMs to provide context-aware responses by retrieving
+        relevant documents from a vector database. Built with Python, FastAPI, and LangChain.
+      </p>
+      <p><strong>Tech:</strong> JavaScript, Chrome API, Manifest V3, HTML, CSS</p>
+      <a href="#" target="_blank">View Project</a>
+    </article>
+  </section>
+</main>
+
+  <section id="about" class="about">
+    <h2>About Me</h2>
+    <div class="about-container">
+      <img src="profile.png" alt="Profile Picture" class="profile-pic" />
+      <div class="about-text">
+        <p>
+          I'm a Computer Science student passionate about building interactive and 
+          efficient web applications. My interests include front-end development, 
+          user experience design, and automation using DevOps tools like Jenkins and Docker.
+        </p>
+        <p>
+          Apart from coding, I enjoy music , sports and exploring new technologies.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="contact">
+    <h2>Contact Me</h2>
+    <p>Have a project in mind or want to collaborate? Let's get in touch!</p>
+    <form class="contact-form">
+      <input type="text" name="name" placeholder="Your Name" required />
+      <input type="email" name="email" placeholder="Your Email" required />
+      <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+      <button type="submit" class="btn">Send Message</button>
+    </form>
+  </section>
+
+  <footer class="footer">© <span id="year"></span> Manas Jain</footer>
+  <script>document.getElementById('year').innerText = new Date().getFullYear();</script>
+</body>
+</html>
